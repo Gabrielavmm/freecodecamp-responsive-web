@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="styles.css">
+<h1 id="title">Formulário Paciente com Diabetes</h1>
+<p id="description">esse formulário tem como obejtivo fazer coletar dados para fins de pesquisa com relação a pacientes nesse quadro</p>
+<form id="survey-form">
+  <label id="name-label" > Nome:
+    
+  <input id="name" type="text"  placeholder="Insira o seu nome completo" required> 
+  </label >
+   <label id="email-label">Email: 
+  <input id="email" type="email" placeholder="Insira o seu email" required>  </label>
+  <label id="number-label"> Telefone:
+  <input id="number" type="number" min="8" max="10" placeholder="00000-0000 ">  
+  </label>
+
+  <label id="dropdown-select">
+    <p>Selecione o seu tipo de diabetes:</p>
+    <select id="dropdown">
+      <option value="tipo1">Diabetes tipo 1</option>
+      <option vaue="tipo 2">Diabetes tipo 2</option>
+      <option value="gestacional">Diabestes gestacional</option>
+      <option value="Outros">Outro tipo</option>
+
+      </select>
+  </label>
+
+  <label  >
+    <p>Com qual frequência você faz seu controle glicẽmico</p>
+    <input type="radio" value="umavez" name="op">Uma ou nenhuma vez ao dia</input>
+    <input type="radio" value="2a3" name="op">Duas a três vezes</input>
+    <input type="radio" value="depende" name="op">Depende do dia</inpu>
+    <input type="radio" value="Necesidade" name="op">Quando sinto necessidade</input>
+    <input type="radio" value="medico" name="op">A quantidade de vezes recomendada pelo meu médico</input>
+
+    </label>
+
+    <label>
+      <legend>Há quanto tempo você tem o diagnóstico?</legend>
+      <input type="checkbox" value="menosDe1">Menos de 1 ano</input>
+       <input type="checkbox" value="menosDe4">Entre 1 e 3 anos</input>
+        <input type="checkbox" value="menosDe7">Entre 4 e 7 anos</input>
+         <input type="checkbox" value="maisDe7">Mais de 8 anos</input>
+
+    </label>
+    <label>
+      <legend>Para você qual a maior dificuldade em relação ao controle glicêmico?</legend>
+      <textarea></textarea>
+    </label>
+    <label>
+    <button id="submit">Enviar</button>
+    </label>
+ 
+
+
+
+</form>

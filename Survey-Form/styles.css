@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #53C2B5;
+    --secondary-color: #3AA395;
+    --text-color: #2C3E50;
+    --light-color: #ECF0F1;
+    --error-color: #E74C3C;
+    --success-color: #2ECC71;
+  }
+  
+  /* Reset e estilos base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+  }
+  
+  /* Estilos do formulário */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+  }
+  
+  .form-group small {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  /* Estilos para radio e checkbox */
+  .radio-option,
+  .checkbox-option {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-option input,
+  .checkbox-option input {
+    margin-right: 0.5rem;
+  }
+  
+  /* Botão de submit */
+  button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-weight: 600;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2D8B7F;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    body {
+      padding: 10px;
+    }
+  }
